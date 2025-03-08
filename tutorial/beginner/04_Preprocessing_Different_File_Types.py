@@ -52,7 +52,7 @@ preprocessing_pipeline.run({"file_type_router": {"sources": list(Path('recipe_fi
 
 # 2. Build a pipeline to query documents
 
-from chat_generator import Hugging_Face_Chat_Generator
+from custom_HF.chat_generator import Hugging_Face_Chat_Generator
 
 from haystack.components.embedders import SentenceTransformersTextEmbedder
 from haystack.components.retrievers.in_memory import InMemoryEmbeddingRetriever

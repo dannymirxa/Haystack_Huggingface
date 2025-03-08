@@ -7,7 +7,7 @@ from haystack.components.builders import ChatPromptBuilder
 from haystack.dataclasses import ChatMessage
 # from haystack.components.generators.chat import HuggingFaceLocalChatGenerator
 
-from chat_generator import Hugging_Face_Chat_Generator
+from custom_HF.chat_generator import Hugging_Face_Chat_Generator
 
 template = [
     ChatMessage.from_user(
