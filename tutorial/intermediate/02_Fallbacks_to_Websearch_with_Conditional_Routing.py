@@ -124,7 +124,7 @@ pipe.connect("router.go_to_websearch", "prompt_builder_for_websearch.query")
 pipe.connect("websearch.documents", "prompt_builder_for_websearch.documents")
 pipe.connect("prompt_builder_for_websearch", "llm_for_websearch")
 
-pipe.draw("pipe.png")
+# pipe.draw("pipe.png")
 
 query = "Where is Munich?"
 

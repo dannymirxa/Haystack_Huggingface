@@ -35,5 +35,6 @@ pipeline.add_component(instance=InMemoryBM25Retriever(document_store=document_st
 # 3. Do Metadata Filtering
 
 query = "Haystack installation"
-pipeline.run(data={"retriever": {"query": query, "filters": {"field": "meta.version", "operator": ">", "value": 1.21}}})
+result = pipeline.run(data={"retriever": {"query": query, "filters": {"field": "meta.version", "operator": ">", "value": 1.21}}})
 
+print(result)
